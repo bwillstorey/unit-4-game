@@ -40,15 +40,34 @@ function imageAssignment () {
 // Event listeners for image clicks
 
 $("#champagne").on("click", function() {
-    currentScore = champagne;
+    currentScore = currentScore + champagne;
+    displayUpdate()
 })
 
+$("#ball").on("click", function() {
+    currentScore = currentScore + ball;
+    displayUpdate()
+})
 
+$("#gayle").on("click", function() {
+    currentScore = currentScore + gayle;
+    displayUpdate()
+})
+
+$("#skull").on("click", function() {
+    currentScore = currentScore + skull;
+    displayUpdate()
+})
 
 
 // check if randomNumber and currentScore match to update wins/losses
 
-if (randomNumber ===)
+if (randomNumber === currentScore) {
+    wins++
+}
+else if (randomNumber < currentScore) {
+    losses++
+}
 
 
 // Call Functions
