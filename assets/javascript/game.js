@@ -1,5 +1,3 @@
-$(document).ready(function() {
-
 // Define global variables
 
     var randomNumber = Math.floor(Math.random() * 120) + 19;
@@ -18,13 +16,15 @@ console.log("Skull = " +skull)
 
 // FUNCTIONS
 
-// Update display with Random Number, # Wins, # Losses, & Current Score
-
-function resetRound () {
-
+// starts a new game after 5 wins
+function newGame () {
+    wins = 0;
+    losses = 0;
+    resetRound()
 }
 
-function resetGame () {
+// resets the game after a win/loss
+function resetRound () {
     currentScore = 0;
     randomNumber = Math.floor(Math.random() * 120) + 19;
     champagne = Math.floor(Math.random() * 12) + 1;
@@ -35,6 +35,7 @@ function resetGame () {
 
 }
 
+// Update display with Random Number, # Wins, # Losses, & Current Score
 function displayUpdate () {
     $("#random-number").text(randomNumber);
     $("#wins").text(wins);
@@ -50,7 +51,28 @@ function imageAssignment () {
     $("#skull").html(skull);
 }
 
+// check if randomNumber and currentScore match to update wins/losses
+function checkScore () {
+    if (randomNumber === currentScore) {
+        wins++
+        displayUpdate()
+        resetRound()
+    }
+    else if (randomNumber < currentScore) {
+        losses++
+        displayUpdate()
+        resetRound()
+    }
+}
 
+function checkWins () {
+    if (wins === 5) {
+        alert("You got so much crystal (or cristal)!!!");
+        newGame();
+    }
+}
+
+$(document).ready(function() {
 
 // Event listeners for image clicks
 
@@ -77,23 +99,6 @@ $("#skull").on("click", function() {
     displayUpdate()
     checkScore()
 })
-
-
-// check if randomNumber and currentScore match to update wins/losses
-
-function checkScore () {
-    if (randomNumber === currentScore) {
-        wins++
-        displayUpdate()
-    }
-    else if (randomNumber < currentScore) {
-        losses++
-        displayUpdate()
-        resetGame()
-    }
-
-}
-
 
 
 // Call Functions
