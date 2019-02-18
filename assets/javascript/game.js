@@ -1,6 +1,6 @@
 // Define global variables
 
-    var randomNumber = Math.floor(Math.random() * 120) + 19;
+    var randomNumber = Math.floor(Math.random() * 101) + 19;
     var wins = 0;
     var losses = 0;
     var currentScore = 0;
@@ -9,29 +9,23 @@
     var gayle = Math.floor(Math.random() * 12) + 1;
     var skull = Math.floor(Math.random() * 12) + 1;
 
-console.log("Champage = " + champagne)
-console.log("Ball = " + ball)
-console.log("Gayle = " + gayle)
-console.log("Skull = " +skull)
+
 
 // FUNCTIONS
-
-// starts a new game after 5 wins
-function newGame () {
-    wins = 0;
-    losses = 0;
-    resetRound()
-}
 
 // resets the game after a win/loss
 function resetRound () {
     currentScore = 0;
-    randomNumber = Math.floor(Math.random() * 120) + 19;
+    randomNumber = Math.floor(Math.random() * 101) + 19;
     champagne = Math.floor(Math.random() * 12) + 1;
     ball = Math.floor(Math.random() * 12) + 1;
     gayle = Math.floor(Math.random() * 12) + 1;
     skull = Math.floor(Math.random() * 12) + 1;
     displayUpdate()
+    console.log("Champage = " + champagne)
+    console.log("Ball = " + ball)
+    console.log("Gayle = " + gayle)
+    console.log("Skull = " +skull)
 
 }
 
@@ -62,13 +56,6 @@ function checkScore () {
         losses++
         displayUpdate()
         resetRound()
-    }
-}
-
-function checkWins () {
-    if (wins === 5) {
-        alert("You got so much crystal (or cristal)!!!");
-        newGame();
     }
 }
 
@@ -106,5 +93,6 @@ $("#skull").on("click", function() {
 imageAssignment()
 displayUpdate()
 checkScore()
+resetRound()
 
 })
