@@ -1,6 +1,6 @@
 body {
     font-family: cursive;
-    font-size: 30px;
+    font-size: 20px;
     max-width: 50%;
     margin-left: 40px;
 }
@@ -8,43 +8,43 @@ body {
 h1 {
     font-size: 35px;
     font-weight: bold;
-    color: #ffffff;
-    background-color: #eb8d8d;
+    background-color: #d6d6e1;
     padding: 20px;
-    /* max-width: 30%; */
     text-align: center;
 }
 
 #instructions {
     line-height: 2;
-    /* max-width: 60%; */
-    background-color: darkcyan;
-    padding: 20px;
-    font-size: 16px;
+    background-color: rgb(210, 210, 210);
+    padding: 10px;
+    font-size: 12px;
 }
 
 #random-number {
     padding: 30px;
-    height: 100px;
     width: 200px;
     float: left;
     text-align: center;
     vertical-align: bottom;
-    background-color: #eb8d8d;
+    background-color: #d6d6e1;
     font-weight: bolder;
+    margin-top: 40px;
     margin-left: 50px;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 #win-loss {
     padding: 30px;
-    height: 100px;
     width: 200px;
     text-align: center;
     background-color: #2b2a2a;
     color: #ffffff;
     float: right;
     margin-right: 50px;
+}
+
+#win-loss p {
+    display: inline;
 }
 
 #pictures {
@@ -54,13 +54,25 @@ h1 {
 img {
     width: 150px;
     padding: 20px;
+    background-color: white;
 }
 
 h3 {
-
-
+    padding: 10px;
+    font-size: 16px;
+    max-width: 20%;
+    margin-left: 20px;
+    background-color: #2b2a2a;
+    color: #ffffff;
 }
 
 #points {
-    
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 20px;
+    max-width: 20%;
+    font-size: 30px;
+    background-color: #d6e1db;
+    border: 2px solid;
 }
