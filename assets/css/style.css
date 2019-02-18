@@ -1,6 +1,58 @@
-img {
-    height: 10%;
-    width: 10%;
-    padding: 10px;
+body {
+    font-family: cursive;
+    font-size: 30px;
+    max-width: 60%;
+    margin-left: 20px;
 }
 
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #eb8d8d;
+    padding: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+#instructions {
+    line-height: 2;
+    max-width: 60%;
+    background-color: darkcyan;
+    padding: 20px;
+    font-size: 16px;
+}
+
+#random-number {
+    padding: 30px;
+    height: 100px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    background-color: #eb8d8d;
+    font-weight: bolder;
+}
+
+#win-loss {
+    padding: 30px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: grey;
+    float: right;
+}
+
+img {
+    
+    width: 150px;
+    padding: 20px;
+}
+
+h3 {
+
+
+}
+
+#points {
+    
+}
