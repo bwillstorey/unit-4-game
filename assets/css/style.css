@@ -1,8 +1,8 @@
 body {
     font-family: cursive;
     font-size: 30px;
-    max-width: 60%;
-    margin-left: 20px;
+    max-width: 50%;
+    margin-left: 40px;
 }
 
 h1 {
@@ -11,13 +11,13 @@ h1 {
     color: #ffffff;
     background-color: #eb8d8d;
     padding: 20px;
-    max-width: 30%;
+    /* max-width: 30%; */
     text-align: center;
 }
 
 #instructions {
     line-height: 2;
-    max-width: 60%;
+    /* max-width: 60%; */
     background-color: darkcyan;
     padding: 20px;
     font-size: 16px;
@@ -26,24 +26,32 @@ h1 {
 #random-number {
     padding: 30px;
     height: 100px;
-    width: 100px;
+    width: 200px;
     float: left;
     text-align: center;
+    vertical-align: bottom;
     background-color: #eb8d8d;
     font-weight: bolder;
+    margin-left: 50px;
+    font-size: 50px;
 }
 
 #win-loss {
     padding: 30px;
     height: 100px;
-    width: 100px;
+    width: 200px;
     text-align: center;
-    background-color: grey;
+    background-color: #2b2a2a;
+    color: #ffffff;
     float: right;
+    margin-right: 50px;
+}
+
+#pictures {
+    clear: both;
 }
 
 img {
-    
     width: 150px;
     padding: 20px;
 }
