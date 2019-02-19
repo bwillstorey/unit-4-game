@@ -12,6 +12,7 @@ h1 {
     background-color: #d6d6e1;
     padding: 15px;
     text-align: center;
+    border: 2px solid;
 }
 
 #instructions {
@@ -19,6 +20,7 @@ h1 {
     background-color: rgb(210, 210, 210);
     padding: 10px;
     font-size: 12px;
+    border: 1px solid;
 }
 
 #random-number {
@@ -32,6 +34,7 @@ h1 {
     margin-top: 10px;
     margin-left: 50px;
     font-size: 30px;
+    border: 2px solid;
 }
 
 #win-loss {
@@ -42,17 +45,22 @@ h1 {
     color: #ffffff;
     float: right;
     margin-right: 50px;
+    margin-bottom: 20px;
+    border: 2px solid grey;
+
 }
 
 #pictures {
     clear: both;
+    background-color: rgb(210, 210, 210);
+    border: 1px solid;
 }
 
 img {
     width: 150px;
     padding: 10px;
     margin: 10px;
-    background-color: white;
+    margin-left: 15px;
 }
 
 h3 {
